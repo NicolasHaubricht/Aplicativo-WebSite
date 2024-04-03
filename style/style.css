@@ -9,6 +9,8 @@ body {
     align-items: center;
 }
 
+
+
 /* Cabeçalho */
 
 a {
@@ -30,12 +32,12 @@ header {
 }
 
 header.scrolled {
-    opacity: 0.92; /* Opacidade reduzida quando o cabeçalho rola para baixo */
+    opacity: 0.92;
 }
 
 nav {
     height: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -87,6 +89,10 @@ li {
     transition: 400ms ease-out;
 }
 
+.select {
+    color: #333;
+}
+
 /* Sessão Inicial */
 
 main {
@@ -108,6 +114,7 @@ main {
 }
 
 #fim-meio{
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -159,7 +166,171 @@ main {
     margin-top: 10px;
 }
 
+hr {
+    width: 60%;
+    height: 0.1px;
+    background-color: #767676;
+}
+
+.cursor {
+    cursor: pointer;
+    transition: 300ms ease-out; 
+}
+
+.cursor:hover {
+    transition: 300ms ease-out;
+    transform: scale(1.1);
+}
+
+/* Rodapé*/
+
+footer {
+    width: 80%;
+    padding: 40px;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    justify-content: space-around;
+}
+
+h4 {
+    color: #333;
+    margin-top: 0;
+}
+
+.licenca {
+    font-size: 11px;
+}
+
+p {
+    color: #767676;
+    font-size: 14px;
+}
+
+.social {
+    display: flex;
+    width: auto;
+    gap: 15px;
+}
+
+.media {
+    cursor: pointer;
+    height: 30px;
+    transition: 500ms ease-out;
+}
+
+.media:hover {
+    transition: 500ms ease-out;
+    transform: scale(1.1);
+}
 
 
-/* Sessão Final */
+@media only screen and (max-width:950px) {
 
+    ul {
+        display: none;
+    }
+
+    #logo {
+        width: auto;
+    }
+
+    #topo-meio{
+        width: 90%;
+    }
+
+    .tumb {
+        height: 300px;
+    }
+
+    #title {
+        font-size: 60px;
+    }
+
+    #fim-meio{
+        width: 90%;
+    }
+
+    #title-2{
+        width: 100%;
+    }
+
+    .rodape {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .tumb {
+        height: 250px;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+
+    #title-2 {
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    main{
+        padding: 10px;
+    }
+
+    #topo-meio{
+        width: 90%;
+    }
+
+    #title{
+        width: auto;
+    }
+
+    #title {
+        font-size: 40px;
+    }
+
+    #p-title {
+        width: 80%;
+        font-size: 19px;
+    }
+
+    .tumb {
+        height: 200px;
+    }
+
+    #title-2 {
+        font-size: 40px;
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .tumb {
+        height: 150px;
+    }
+    
+    #p-title {
+        width: 100%;
+    }
+
+    #title {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    #title {
+        font-size: 20px;
+    }
+
+}

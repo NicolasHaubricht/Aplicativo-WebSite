@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lobe Tour | Machine Learning</title>
+    <title>Aplicativo | Web Site</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
+
+    <!-- Icone -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,13 +23,13 @@
     <!-- Cabeçalho -->
     <header id="header">
         <nav>
-            <h1 id="logo">lobe</h1>
+            <h1 id="logo">APP</h1>
             <ul>
-                <a href="#"><li>Overview</li></a>
-                <a href="#"><li>Exemples</li></a>
-                <a href="#"><li>Tour</li></a>
-                <a href="#"><li>Blog</li></a>
-                <a href="#"><li>Help</li></a>
+                <a href="#"><li class="cursor">Sobre</li></a>
+                <a href="#"><li class="cursor">Aplicações</li></a>
+                <a href="#"><li class="cursor"><strong class="select">Home</strong></li></a>
+                <a href="#"><li class="cursor">Contato</li></a>
+                <a href="#"><li class="cursor">Ajuda</li></a>
             </ul>
             <button id="btn-download">Download</button>
         </nav>
@@ -33,25 +39,68 @@
     <main>
 
         <div id="topo-meio">
-            <h1 id="title">Lobe <strong class="color">Tour</strong></h1>
-            <p id="p-title">Build your first machine learning model in ten minutes. No code or experience required.</p>
+            <h1 id="title">Novo <strong class="color">Aplicativo</strong></h1>
+            <p id="p-title">Garanta acesso antecipado a esse novo projeto. Para conseguir acessá-lo basta baixar e aproveitar!</p>
             <!-- VIDEO -->
-            <a href="javascript:void(0);" onclick="openFullScreen('https://www.youtube.com/embed/Mdcw3Sb98DA?si=ggf-XoZOt67Guk7x')">
+            <a href="javascript:void(0);" onclick="openFullScreen('https://www.youtube.com')">
                 <img class="tumb" src="img/video/tumb-1.jpg" alt="">
             </a>
         </div>
 
         <div id="fim-meio">
-            <h1 id="title-2">Train your app with Lobe</h1>
+            <h1 id="title-2">Garanta já o acesso antecipado</h1>
             <button id="btn-download">Download</button>
         </div>
     </main>
 
+    <hr>
+
+    <footer>
+        <div class="rodape">
+            <div class="colunas">
+                <h1 id="logo">APP</h1>
+                <p>Feito por: Nicolas Haubricht.</p>
+                <p>Todos os direitos reservados.</p>
+                <p class="licenca">©2024</p>
+            </div>
+
+
+            <div class="colunas">
+                <h4>Sobre</h4>
+                <p class="cursor">Download</p>
+                <p class="cursor">Aplicações</p>
+                <p class="cursor">Exemplos</p>
+                <p class="cursor">Blog</p>
+            </div>
+
+
+            <div class="colunas">
+                <h4>Geral</h4>
+                <p class="cursor">Noticias</p>
+                <p class="cursor">Licença</p>
+                <p class="cursor"></p>
+                <p class="cursor">Imagens</p>
+            </div>
+
+
+            <div class="colunas">
+                <h4>Ajuda</h4>
+                <p class="cursor">Ajuda</p>
+                <p class="cursor">Dados</p>
+                <p class="cursor">Contato</p>
+                <p class="cursor">Privacidade</p>
+            </div>
+
+
+            <div class="social">
+                <img class="media" src="img/social_media/sms.png" alt="">
+                <img class="media" src="img/social_media/twitter.png" alt="">
+                <img class="media" src="img/social_media/youtube.png" alt="">
+            </div>
+        </div>
+    </footer>
 
     <!-- JS -->
     <script src="script/script.js"></script>
 </body>
 </html>
-
-
-<!-- Train your app with Lobe -->
